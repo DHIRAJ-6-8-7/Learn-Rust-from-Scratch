@@ -1,3 +1,4 @@
+#![allow(dead_code)]
 fn main() {
     let x = 5;
 
@@ -53,4 +54,7 @@ fn main() {
     let (x, y, z) = tup;
 
     println!("The value of y is: {y}");
+
+    let multiple = [5; 100];
+    println!("{:?}", multiple);
 }

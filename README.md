@@ -127,7 +127,7 @@ cargo test
 ## Progress
 
 - [x] Toolchain configured
-- [ ] Day 1 complete
+- [x] Day 1 complete
 - [ ] Day 2 complete
 - [ ] Day 3 complete
 - [ ] Day 4 complete
