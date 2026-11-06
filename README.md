@@ -37,8 +37,8 @@ This repository documents a structured 15-day intensive study of the Rust progra
 
 | Day | Topic                                                                           | Status      |
 | --- | ------------------------------------------------------------------------------- | ----------- |
-| 01  | Toolchain setup, types, variables, mutability, control flow, functions, modules | In Progress |
-| 02  | Ownership, moves, borrowing, references, slices, Copy vs Clone, RAII            | Pending     |
+| 01  | Toolchain setup, types, variables, mutability, control flow, functions, modules | Completed   |
+| 02  | Ownership, moves, borrowing, references, slices, Copy vs Drop, RAII, NLL        | In Progress |
 | 03  | Structs, enums, pattern matching, Option, Result, error handling                | Pending     |
 | 04  | Collections, String vs &str, iterators, closures, adapters                      | Pending     |
 | 05  | Traits, generics, trait objects, static vs dynamic dispatch, lifetimes          | Pending     |
@@ -80,7 +80,7 @@ An async, Redis-compatible in-memory key-value server built incrementally from D
 
 ```bash
 # Install Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
 
 # Check for errors (fast — use after every change)
 cargo check
@@ -97,43 +97,3 @@ cargo fmt
 # Test
 cargo test
 ```
-
----
-
-## Repository Structure
-
-```
-.
-├── day01/          # Types, variables, control flow, functions, modules
-├── day02/          # Ownership and borrowing
-├── ...
-├── day09/          # Capstone milestone 1 — async TCP server skeleton
-├── ...
-└── capstone/       # Redis-compatible KV server — final project
-```
-
----
-
-## References
-
-- [The Rust Programming Language](https://doc.rust-lang.org/book/)
-- [Rust by Example](https://doc.rust-lang.org/rust-by-example/)
-- [Tokio Tutorial](https://tokio.rs/tokio/tutorial)
-- [docs.rs](https://docs.rs)
-- [Rust API Guidelines](https://rust-lang.github.io/api-guidelines/)
-
----
-
-## Progress
-
-- [x] Toolchain configured
-- [x] Day 1 complete
-- [ ] Day 2 complete
-- [ ] Day 3 complete
-- [ ] Day 4 complete
-- [ ] Day 5 complete
-- [ ] Day 6 complete
-- [ ] Day 7 complete
-- [ ] Day 8 complete
-- [ ] Capstone started
-- [ ] Capstone complete
