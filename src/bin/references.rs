@@ -1,5 +1,6 @@
 #![allow(dead_code)]
 #![allow(unused_variables)]
+#![allow(unused_mut)]
 fn main() {
     let s1: String = String::from("dhiraj Shrestha");
     let len = calc_length(&s1);

@@ -35,23 +35,35 @@ This repository documents a structured 15-day intensive study of the Rust progra
 
 ## Curriculum
 
-| Day | Topic                                                                           | Status      |
-| --- | ------------------------------------------------------------------------------- | ----------- |
-| 01  | Toolchain setup, types, variables, mutability, control flow, functions, modules | Completed   |
-| 02  | Ownership, moves, borrowing, references, slices, Copy vs Drop, RAII, NLL        | In Progress |
-| 03  | Structs, enums, pattern matching, Option, Result, error handling                | Pending     |
-| 04  | Collections, String vs &str, iterators, closures, adapters                      | Pending     |
-| 05  | Traits, generics, trait objects, static vs dynamic dispatch, lifetimes          | Pending     |
-| 06  | Modules, crates, workspaces, testing, documentation, semver                     | Pending     |
-| 07  | Smart pointers, interior mutability, professional error handling, CLI project   | Pending     |
-| 08  | Concurrency: threads, channels, Arc/Mutex, atomics, rayon                       | Pending     |
-| 09  | Async Rust: futures, async/await, tokio internals — Capstone begins             | Pending     |
-| 10  | Networking with tokio: TCP, framing, protocol parsing, backpressure             | Pending     |
-| 11  | serde, axum, sqlx with PostgreSQL, configuration management                     | Pending     |
-| 12  | Observability: tracing, structured logging, graceful shutdown, benchmarking     | Pending     |
-| 13  | Unsafe Rust, FFI with C, macros, performance tuning, memory layout              | Pending     |
-| 14  | CI/CD, property testing, fuzzing, release profiles, API design patterns         | Pending     |
-| 15  | Capstone finalization, benchmarks, code review, 3-month learning roadmap        | Pending     |
+| Day | Topic                                                                                                           | Status      |
+| --- | --------------------------------------------------------------------------------------------------------------- | ----------- |
+| 01  | Toolchain setup, types, variables, mutability, control flow, functions, modules                                 | Completed   |
+| 02  | Ownership, moves, borrowing, references, slices, Copy vs Drop, RAII, NLL                                        | Completed   |
+| 03  | Structs (Named, Tuple, Unit-like), Debug/Display traits, Methods, Associated Functions, Enums, Pattern Matching | In Progress |
+| 04  | Collections, String vs &str, iterators, closures, adapters                                                      | Pending     |
+| 05  | Traits, generics, trait objects, static vs dynamic dispatch, lifetimes                                          | Pending     |
+| 06  | Modules, crates, workspaces, testing, documentation, semver                                                     | Pending     |
+| 07  | Smart pointers, interior mutability, professional error handling, CLI project                                   | Pending     |
+| 08  | Concurrency: threads, channels, Arc/Mutex, atomics, rayon                                                       | Pending     |
+| 09  | Async Rust: futures, async/await, tokio internals — Capstone begins                                             | Pending     |
+| 10  | Networking with tokio: TCP, framing, protocol parsing, backpressure                                             | Pending     |
+| 11  | serde, axum, sqlx with PostgreSQL, configuration management                                                     | Pending     |
+| 12  | Observability: tracing, structured logging, graceful shutdown, benchmarking                                     | Pending     |
+| 13  | Unsafe Rust, FFI with C, macros, performance tuning, memory layout                                              | Pending     |
+| 14  | CI/CD, property testing, fuzzing, release profiles, API design patterns                                         | Pending     |
+| 15  | Capstone finalization, benchmarks, code review, 3-month learning roadmap                                        | Pending     |
+
+---
+
+## Progress Notes & Technical Deep Dives
+
+### Day 02–03 Milestones Covered:
+
+- **Ownership & Borrowing:** Mastered partial moves in structs (tracking ownership down to individual fields) and borrowing rules (`&self` vs `&mut self`).
+- **Struct Variants:** Explored classic named-field structs, lightweight **tuple structs** for domain type safety, and zero-sized **unit-like structs** for trait anchoring and compile-time marker types.
+- **Formatting Traits & Macros:** Implemented `#[derive(Debug)]` for `{:#?}` multi-line inspection, understood `std::fmt::Display` for user-facing output, and utilized the `dbg!` macro (prints expression + line number to `stderr` while returning ownership).
+- **Methods & Ergonomics:** Defined `impl` blocks using dot syntax and leveraged Rust’s **automatic referencing and dereferencing** mechanism.
+- **Associated Functions:** Implemented constructor patterns (`Type::new()`) and factory functions (`Type::square()`) using double-colon (`::`) namespace invocation.
 
 ---
 
