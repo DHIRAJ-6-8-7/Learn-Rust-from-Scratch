@@ -39,8 +39,8 @@ This repository documents a structured 15-day intensive study of the Rust progra
 | --- | --------------------------------------------------------------------------------------------------------------- | ----------- |
 | 01  | Toolchain setup, types, variables, mutability, control flow, functions, modules                                 | Completed   |
 | 02  | Ownership, moves, borrowing, references, slices, Copy vs Drop, RAII, NLL                                        | Completed   |
-| 03  | Structs (Named, Tuple, Unit-like), Debug/Display traits, Methods, Associated Functions, Enums, Pattern Matching | In Progress |
-| 04  | Collections, String vs &str, iterators, closures, adapters                                                      | Pending     |
+| 03  | Structs (Named, Tuple, Unit-like), Debug/Display traits, Methods, Associated Functions, Enums, Pattern Matching | Completed   |
+| 04  | Collections, String vs &str, iterators, closures, adapters                                                      | In Progress |
 | 05  | Traits, generics, trait objects, static vs dynamic dispatch, lifetimes                                          | Pending     |
 | 06  | Modules, crates, workspaces, testing, documentation, semver                                                     | Pending     |
 | 07  | Smart pointers, interior mutability, professional error handling, CLI project                                   | Pending     |
@@ -64,6 +64,8 @@ This repository documents a structured 15-day intensive study of the Rust progra
 - **Formatting Traits & Macros:** Implemented `#[derive(Debug)]` for `{:#?}` multi-line inspection, understood `std::fmt::Display` for user-facing output, and utilized the `dbg!` macro (prints expression + line number to `stderr` while returning ownership).
 - **Methods & Ergonomics:** Defined `impl` blocks using dot syntax and leveraged Rust’s **automatic referencing and dereferencing** mechanism.
 - **Associated Functions:** Implemented constructor patterns (`Type::new()`) and factory functions (`Type::square()`) using double-colon (`::`) namespace invocation.
+- **Enums & `Option<T>`:** Modeled algebraic data types with variant payloads and eliminated null-pointer failures using Rust's `Option<T>` (`Some(T)` / `None`).
+- **Pattern Matching & Control Flow:** Mastered `match` exhaustiveness checks, payload extraction/binding, catch-all wildcards (`_`) vs. named catch-all variables, the unit type (`()`), and concise syntactic sugar with `if let` and `let...else` (diverging early exits to stay on the "Happy Path").
 
 ---
 
