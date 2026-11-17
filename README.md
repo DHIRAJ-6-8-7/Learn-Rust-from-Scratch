@@ -22,12 +22,12 @@
 
 ## About
 
-| | |
-| --- | --- |
-| **Author** | Dhiraj Shrestha |
-| **Institution** | Institute of Engineering, Pulchowk Campus (IOE), Nepal |
-| **Prior Experience** | C/C++, Python, FastAPI, PostgreSQL, Redis, Linux, Git, Networking |
-| **Engineering Focus** | Backend systems, distributed systems, network programming |
+|                       |                                                                   |
+| --------------------- | ----------------------------------------------------------------- |
+| **Author**            | Dhiraj Shrestha                                                   |
+| **Institution**       | Institute of Engineering, Pulchowk Campus (IOE), Nepal            |
+| **Prior Experience**  | C/C++, Python, FastAPI, PostgreSQL, Redis, Linux, Git, Networking |
+| **Engineering Focus** | Backend systems, distributed systems, network programming         |
 
 This repository documents a structured 15-day intensive study of the Rust programming language, progressing from fundamentals to a production-grade capstone project. The approach follows professional mentorship methodology: every concept is taught with its motivation, mental model, industry usage, and common failure modes.
 
@@ -45,26 +45,26 @@ This repository documents a structured 15-day intensive study of the Rust progra
 ## Curriculum
 
 <p align="center">
-  <img src="assets/progress.svg" alt="Progress: 3 of 15 days completed, Day 4 in progress" width="100%">
+  <img src="assets/progress.svg" alt="Progress: 4 of 15 days completed, Day 5 in progress" width="100%">
 </p>
 
-| Day | Topic | Status |
-| --- | --- | --- |
-| 01 | Toolchain setup, types, variables, mutability, control flow, functions, modules | ![Completed](https://img.shields.io/badge/-Completed-2e7d32?style=flat-square) |
-| 02 | Ownership, moves, borrowing, references, slices, Copy vs Drop, RAII, NLL | ![Completed](https://img.shields.io/badge/-Completed-2e7d32?style=flat-square) |
-| 03 | Structs (Named, Tuple, Unit-like), Debug/Display traits, Methods, Associated Functions, Enums, Pattern Matching | ![Completed](https://img.shields.io/badge/-Completed-2e7d32?style=flat-square) |
-| 04 | Collections, String vs &str, iterators, closures, adapters | ![In Progress](https://img.shields.io/badge/-In_Progress-d99a1e?style=flat-square) |
-| 05 | Traits, generics, trait objects, static vs dynamic dispatch, lifetimes | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 06 | Modules, crates, workspaces, testing, documentation, semver | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 07 | Smart pointers, interior mutability, professional error handling, CLI project | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 08 | Concurrency: threads, channels, Arc/Mutex, atomics, rayon | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 09 | Async Rust: futures, async/await, tokio internals — Capstone begins | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 10 | Networking with tokio: TCP, framing, protocol parsing, backpressure | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 11 | serde, axum, sqlx with PostgreSQL, configuration management | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 12 | Observability: tracing, structured logging, graceful shutdown, benchmarking | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 13 | Unsafe Rust, FFI with C, macros, performance tuning, memory layout | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 14 | CI/CD, property testing, fuzzing, release profiles, API design patterns | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
-| 15 | Capstone finalization, benchmarks, code review, 3-month learning roadmap | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square) |
+| Day | Topic                                                                                                           | Status                                                                             |
+| --- | --------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 01  | Toolchain setup, types, variables, mutability, control flow, functions, modules                                 | ![Completed](https://img.shields.io/badge/-Completed-2e7d32?style=flat-square)     |
+| 02  | Ownership, moves, borrowing, references, slices, Copy vs Drop, RAII, NLL                                        | ![Completed](https://img.shields.io/badge/-Completed-2e7d32?style=flat-square)     |
+| 03  | Structs (Named, Tuple, Unit-like), Debug/Display traits, Methods, Associated Functions, Enums, Pattern Matching | ![Completed](https://img.shields.io/badge/-Completed-2e7d32?style=flat-square)     |
+| 04  | Collections, String vs &str, iterators, closures, adapters                                                      | ![Completed](https://img.shields.io/badge/-Completed-2e7d32?style=flat-square)     |
+| 05  | Traits, generics, trait objects, static vs dynamic dispatch, lifetimes                                          | ![In Progress](https://img.shields.io/badge/-In_Progress-d99a1e?style=flat-square) |
+| 06  | Modules, crates, workspaces, testing, documentation, semver                                                     | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 07  | Smart pointers, interior mutability, professional error handling, CLI project                                   | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 08  | Concurrency: threads, channels, Arc/Mutex, atomics, rayon                                                       | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 09  | Async Rust: futures, async/await, tokio internals — Capstone begins                                             | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 10  | Networking with tokio: TCP, framing, protocol parsing, backpressure                                             | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 11  | serde, axum, sqlx with PostgreSQL, configuration management                                                     | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 12  | Observability: tracing, structured logging, graceful shutdown, benchmarking                                     | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 13  | Unsafe Rust, FFI with C, macros, performance tuning, memory layout                                              | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 14  | CI/CD, property testing, fuzzing, release profiles, API design patterns                                         | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
+| 15  | Capstone finalization, benchmarks, code review, 3-month learning roadmap                                        | ![Pending](https://img.shields.io/badge/-Pending-4b5563?style=flat-square)         |
 
 ---
 
@@ -161,7 +161,7 @@ An async, Redis-compatible in-memory key-value server built incrementally from D
 
 ```bash
 # Install Rust
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+curl --proto '=https' --tlsv1.2 -sSf [https://sh.rustup.rs](https://sh.rustup.rs) | sh
 
 # Check for errors (fast — use after every change)
 cargo check
